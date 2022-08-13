@@ -1,0 +1,15 @@
+
+<html>
+<head>
+<title>
+    Home
+</title>
+</head>
+<body>
+<form method="post" enctype="multipart/form-data"> {% csrf_token %} 
+    {{form.as_p}}
+    <input type="submit" value="Submit">
+    {% comment %} <a type="submit" href={% url 'redirect' %}>Save</a> {% endcomment %}
+</form>
+</body>
+</html>
